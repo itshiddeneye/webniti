@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
+    <link rel="stylesheet" href="/public/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <title>Contact Us</title>
+    <style>
+        @media (max-width: 991px) {
+            #backToTopBtn {
+                height: 3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo" style="text-decoration: none;font-size:medium">
+            <a href="/index.html"><span class="webneeti">WebNeeti</span></a>
+        </div>
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar" class="menu-bar">&#9776;</label>
+        <nav class="navbar">
+            <ul class="navbar-content">
+                <li class="navbar-list"><a class="navbar-list-link con" href="/index.html">Home</a></li>
+                <li class="navbar-list"><a class="navbar-list-link nav-white-bottom" href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="banner banner-contact">
+        <section class="contact-form">
+            <section class="box-container">
+                <h1>Contact Form</h1>
+                <p>Fill up the form and our team will get back to you ASAP</p>
+                <div class="box">
+                    <a href="tel:+91">
+                        <i class="bi bi-telephone-outbound-fill bold-text call-contact"></i>
+                        <span>+91 9198985665</span>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="mailto:example@email.co">
+                        <i class="bi bi-envelope-plus-fill bold-text mail-contact"></i>
+                        <span>contact@example.com</span>
+                    </a>
+                </div>
+
+            </section>
+            <form action="https://formspree.io/f/maygjdlp" id="contact-form" method="POST">
+                <div class="name-section">
+                    <div class="input-group">
+                        <label for="First-name">First Name:</label>
+                        <input type="text" id="First-name" name="First-name" class="form-input" placeholder="First Name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" name="last-name" class="form-input" placeholder="Last Name" required>
+                    </div>
+                </div>
+                <div class="contact-details">
+                    <div class="input-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="example@gmail.com" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="phone-number">Phone Number:</label>
+                        <input type="text" id="phone-number" name="phone-number" class="form-input" placeholder="Phone" required>
+                    </div>
+                </div>
+                <div class="selection-work">
+                    <label>Select the type of work:</label>
+                    <div class="work-section">
+                        <label><input type="radio" name="work-type" value="Web-development"><p>Web Development</p></label><br>
+                        <label><input type="radio" name="work-type" value="App-Development"><p>App-Development</p></label><br>
+                        <label><input type="radio" name="work-type" value="Assignment-help"><p>Assignment-help</p></label><br>
+                        <label><input type="radio" name="work-type" value="other"><p>Other(Please define in the message)</p></label><br> </div>
+                </div>
+                <div class="message-section">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" class="form-textarea" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-contact-button">Send Message</button>
+            </form>
+        </section>
+
+    </section>
+
+    <section class="footer-section d-flex flex-column justify-content-center w-100 h-100">
+        <div class="row-footer" id="footer">
+            <div class="footer-content" id="f1">
+                <h1>About Us</h1>
+                <p>WebNeeti.com is a leading WEBSITE and Mobile App DESIGN AND DEVELOPMENT Company serving a wide range of WEBSITE and Mobile Application DESIGN AND DEVELOPMENT services to the universal platform since 2022.</p>
+                <br>
+                <a href="/contact.html">
+                    <div> Contact Us</div>
+                </a>
+            </div>
+            <!-- Back to top button -->
+            <a id="backToTopBtn" href="#navbar"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 19V5M5 12l7-7 7 7" />
+    </svg>
+            </a>
+
+            <div class="footer-content">
+                <h1>Contact Us</h1>
+                <ul>
+                    <li>
+                        <h3>Call Us</h3>
+                        <a href="tel:+91998985665">+919198985665</a></li>
+                    <li>
+                        <h3>Email </h3>
+                        <a href="mailto:mail@gmail.com">mail@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h1>Services</h1>
+                <ul>
+                    <li>Website Design</li>
+                    <li>Website Development</li>
+                    <li>Wordpress Development</li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2023 WebNeeti.com. All Rights Reserved.</p>
+        </footer>
+    </section>
+    <script src="/script.js"></script>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function() {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
+    <link rel="stylesheet" href="/public/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <title>Home Page</title>
+    <style>
+        @media (max-width: 991px) {
+            #backToTopBtn {
+                height: 3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="home-page" id="navbar">
+        <header>
+            <div class="logo" style="text-decoration: none;font-size:medium">
+                <a href="/index.html"><span class="webneeti">WebNeeti</span></a>
+
+            </div>
+            <input type="checkbox" id="menu-bar">
+            <label for="menu-bar">&#9776;</label>
+            <nav class="navbar">
+                <ul class="navbar-content">
+                    <li class="navbar-list"><a class="navbar-list-link nav-white-bottom" href="/index.html">Home</a></li>
+                    <li class="navbar-list"><a class="navbar-list-link nav-white-bottom" href="#About-us">About</a></li>
+                    <li class="navbar-list"><a class="navbar-list-link nav-white-bottom" href="#Services">Services</a></li>
+                    <li class="navbar-list"><a class="navbar-list-link nav-white-bottom" href="#testimonial">Testimonials</a></li>
+                    <li class="navbar-list"><a class="navbar-list-link con" href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="banner bubble-container">
+            <div class="banner-content">
+
+                <div class="banner-text-container" id="top">
+                    <h1>Welcome to <span class="webneeti">WebNeeti</span></h1>
+                    <p>We're here to deliver outstanding web and app development solutions, along with top-notch assignment assistance.</p>
+                    <br><br><br>
+                    <!-- <a href="#" class="button-menu"><span>Explore More</span>
+                    </a> -->
+
+                </div>
+                <div class="banner-image-container">
+                    <br> <br> <br> <img class="banner-image" src="/public/images/young-people-working-in-office.png" alt="Custom Banner Image">
+                </div>
+
+            </div>
+        </section>
+    </section>
+    <section id="About-us" class="about-us">
+        <div class="about">
+            <div class="about-image">
+                <img src="/public/images/person.png" class="pic" alt="Team Image">
+            </div>
+            <div class="text">
+                <h2 style="border-bottom: 2px solid;">About Us</h2>
+                <h5>Front-end Developer & <span class="about-span">Designer</span></h5>
+                <p>Welcome to<span class="webneeti">WebNeeti</span>, where creativity meets innovation. We are a team of dedicated front-end developers and designers who are passionate about creating exceptional user experiences. Our mission is to bring
+                    your ideas to life and make your digital presence stand out.</p>
+                <div class="data">
+                    <a href="/contact.html" class="hire">CONTACT US</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="user-card-container">
+        <div class="user-card">
+            <div class="user-per-card">
+                <div><img src="/public/images/user.png" alt="" /></div>
+                <div class="user-count">30+</div>
+                <div class="user-name">Happy Customers</div>
+            </div>
+            <div class="user-per-card">
+                <div><img src="/public/images/user.png" alt="" /></div>
+                <div class="user-count">700+</div>
+                <div class="user-name">Satisfied Clients</div>
+            </div>
+            <div class="user-per-card">
+                <div><img src="/public/images/user.png" alt="" /></div>
+                <div class="user-count">1000+</div>
+                <div class="user-name">Completed Projects</div>
+            </div>
+        </div>
+    </section>
+    <section class="services-section" id="Services">
+        <div class="container">
+            <h2 class="service-heading" style="border-bottom: 2px solid;color:rgb(255, 255, 255);">Our Services</h2>
+            <section class="services">
+                <div class="card">
+                    <div class="content">
+                        <div class="icon"><i class="bi bi-code"></i></div>
+                        <div class="title">Web Development</div>
+                        <p class="services-para">From responsive websites to complex web applications, we craft digital solutions that make an impact.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="icon"><i class="bi bi-phone"></i></div>
+                        <div class="title">App Development</div>
+                        <p class="services-para">Transform your ideas into stunning mobile apps for iOS and Android platforms.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="icon"><i class="bi bi-journals"></i></div>
+                        <div class="title">Assignment Help</div>
+                        <p class="services-para">Need assistance with assignments? We offer top-quality academic help tailored to your needs.</p>
+                    </div>
+                </div>
+            </section>
+            <a href="services.html" class="read-more-link">Read More</a>
+        </div>
+    </section>
+
+
+    <div class="testimonial-slider" id="testimonial">
+        <a class="prev-btn" onclick="plusTestimonials(-1)">❮</a>
+        <div class="testimonial">
+            <img src="/public/images/user.png" alt="" class="circular-frame" />
+            <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+            <div class="quote-icon-div">
+                <i class="bi bi-quote testimonial-quote-icon "></i>
+            </div>
+            <p class="author">John Keats</p>
+        </div>
+        <div class="testimonial">
+            <img src="/public/images/user.png" alt="" class="circular-frame" />
+            <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+            <div class="quote-icon-div">
+                <i class="bi bi-quote testimonial-quote-icon "></i>
+            </div>
+            <p class="author">Ernest Hemingway</p>
+        </div>
+        <div class="testimonial">
+            <img src="/public/images/user.png" alt="" class="circular-frame" />
+            <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+            <div class="quote-icon-div">
+                <i class="bi bi-quote testimonial-quote-icon "></i>
+            </div>
+            <p class="author">Thomas A. Edison</p>
+        </div>
+        <a class="next-btn" onclick="plusTestimonials(1)">❯</a>
+        <div class="dot-container">
+            <span class="dot" onclick="currentTestimonial(1)"></span>
+            <span class="dot" onclick="currentTestimonial(2)"></span>
+            <span class="dot" onclick="currentTestimonial(3)"></span>
+        </div>
+    </div>
+    </section>
+    <!-- End of custom testimonials -->
+    </div>
+    </section>
+    <div class="container call">
+        <h1 style="border-bottom: 2px solid;">
+            Start a new project?
+        </h1>
+        <p>
+            Call us on this Number
+        </p>
+        <h2>
+            +91 9198985665
+        </h2>
+
+        <a href="/contact.html">
+            <div> Contact Us</div>
+        </a>
+    </div>
+
+    <section class="footer-section d-flex flex-column justify-content-center w-100 h-100">
+        <div class="row-footer" id="footer">
+            <div class="footer-content" id="f1">
+                <h1>About Us</h1>
+                <p>WebNeeti.com is a leading WEBSITE and Mobile App DESIGN AND DEVELOPMENT Company serving a wide range of WEBSITE and Mobile Application DESIGN AND DEVELOPMENT services to the universal platform since 2022.</p>
+                <br>
+                <a href="/contact.html">
+                    <div> Contact Us</div>
+                </a>
+            </div>
+
+            <div class="footer-content">
+                <h1>Contact Us</h1>
+                <ul>
+                    <li>
+                        <h3>Call Us</h3>
+                        <a href="tel:+91998985665">+919198985665</a></li>
+                    <li>
+                        <h3>Email </h3>
+                        <a href="mailto:mail@gmail.com">mail@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h1>Services</h1>
+                <ul>
+                    <li>Website Design</li>
+                    <li>Website Development</li>
+                    <li>Wordpress Development</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2023 WebNeeti.com. All Rights Reserved.</p>
+        </footer>
+    </section>
+
+    <!-- Back to top button -->
+    <a id="backToTopBtn" href="#navbar"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 19V5M5 12l7-7 7 7" />
+    </svg>
+    </a>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function() {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
+
+    <script src="/script.js"></script>
+
+</body>
+
+</html>
